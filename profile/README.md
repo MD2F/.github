@@ -1,7 +1,5 @@
 # MD2F - Markdown 2 File
 
-![MD2F Banner](https://via.placeholder.com/800x200.png?text=MD2F)
-
 ## About the Project
 
 **MD2F** is a tool to convert Markdown files into HTML and other outputs, supporting:
