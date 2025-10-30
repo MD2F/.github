@@ -1,75 +1,89 @@
 # MD2F - Markdown 2 File
 
-## Obsah
+![MD2F Banner](https://via.placeholder.com/800x200.png?text=MD2F)
 
-* [O projektu](#o-projektu)
-* [Funkce](#funkce)
-* [Instalace](#instalace)
-* [Použití](#použití)
-* [Příklad](#příklad)
-* [Příspěvky](#příspěvky)
-* [Licence](#licence)
+## About the Project
 
----
+**MD2F** is a tool to convert Markdown files into HTML and other outputs, supporting:
 
-## O projektu
+* Full GitHub-flavored Markdown
+* Tables, links, and images
+* Nested lists, blockquotes, and code blocks
+* Multi-page Markdown files
+* Automatic fallback when a file fails to load
 
-**MD2F** je nástroj pro konverzi Markdown souborů na HTML a další výstupy, s podporou:
+The goal of the project is to provide a **simple, flexible, and clear** tool for working with Markdown documentation.
 
-* Kompletního GitHub Markdown
-* Tabulek, odkazů, obrázků
-* Vnořených seznamů, citací a kódu
-* Multi-page Markdown souborů
-* Automatického fallbacku při chybě načtení souboru
+## Features
 
-Cílem projektu je poskytovat **jednoduchý, flexibilní a přehledný** nástroj pro práci s Markdown dokumentací.
+* ✅ Markdown → HTML conversion
+* ✅ Support for relative and absolute URLs
+* ✅ Fallback file if loading fails
+* ✅ Support for nested lists (`1.1`, `a.a`) and mixed `*` / `-` styles
+* ✅ Nested blockquotes (`>`) and code blocks (`lang`)
+* ✅ Styled outputs with CSS
+* ✅ Multi-page Markdown and tabbed HTML views
+* ✅ Optimized for quick web Markdown display
 
----
+## Installation
 
-## Funkce
+**Requirements:**
 
-* ✅ Konverze Markdown → HTML
-* ✅ Podpora relativních a absolutních URL
-* ✅ Fallback soubor při selhání načtení
-* ✅ Interaktivní menu pro rychlou navigaci po sekcích
-* ✅ Podpora vnořených seznamů (`1.1`, `a.a`) a kombinace `*` / `-`
-* ✅ Vnořené citace (`>`) a kódové bloky (`lang`)
-* ✅ Stylované výstupy s CSS
-* ✅ Multi-page Markdown a taby v HTML
-* ✅ Zaměřeno na rychlé webové zobrazení Markdown obsahu
+* Python ≥ 3.8
+* PyQt5
+* Other dependencies listed in `requirements.txt`
 
----
-
-## Příklad
-
-```markdown
-# Nadpis 1
-
-## Nadpis 2
-
-* Seznam položek
-  * Podpoložka
-- Další položka
-
-1. Číslovaný seznam
-   1.1 Podpoložka
-   1.2 Podpoložka
-
-> Citace
-
-**Tucný text**, *kurzíva*
-
-[Odkaz](https://github.com)
-![Obrázek](https://via.placeholder.com/150)
+```bash
+git clone https://github.com/your-username/MD2F.git
+cd MD2F
+pip install -r requirements.txt
 ```
 
----
+## Usage
 
-## Licence
+Run the application:
 
-Tento projekt je licencován pod **Apache License**.
-Viz [LICENSE](LICENSE) pro více informací.
+```bash
+python main.py
+```
 
----
+Open a Markdown file via URL:
+
+```
+project/?url=path/to/markdown.md
+```
+
+If the file cannot be loaded, it will automatically open the fallback Markdown `res/md/404.md`.
+
+## Example
+
+```markdown
+# Heading 1
+
+## Heading 2
+
+* List item
+  * Sub-item
+- Another item
+
+1. Numbered list
+   1.1 Sub-item
+   1.2 Sub-item
+
+> Blockquote
+
+**Bold text**, *italic text*
+
+[Link](https://github.com)
+![Image](https://via.placeholder.com/150)
+```
+
+## Contributing
+
+Contributions are welcome! Open a Pull Request or an issue.
+
+## License
+
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 © 2025 Jan Poláček
