@@ -23,32 +23,12 @@ The goal of the project is to provide a **simple, flexible, and clear** tool for
 * ✅ Multi-page Markdown and tabbed HTML views
 * ✅ Optimized for quick web Markdown display
 
-## Installation
-
-**Requirements:**
-
-* Python ≥ 3.8
-* PyQt5
-* Other dependencies listed in `requirements.txt`
-
-```bash
-git clone https://github.com/your-username/MD2F.git
-cd MD2F
-pip install -r requirements.txt
-```
-
 ## Usage
-
-Run the application:
-
-```bash
-python main.py
-```
 
 Open a Markdown file via URL:
 
 ```
-project/?url=path/to/markdown.md
+md2f.github.io/?url=path/to/markdown.md
 ```
 
 If the file cannot be loaded, it will automatically open the fallback Markdown `res/md/404.md`.
